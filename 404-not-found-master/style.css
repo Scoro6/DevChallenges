@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+header {
+  height: 10vh;
+}
+header p {
+  text-transform: uppercase;
+  padding-left: 5%;
+  font-family: "Inconsolata", sans-serif;
+  line-height: 5vh;
+  font-size: 24px;
+}
+.side-text h1 {
+  font-family: "Space Mono", sans-serif;
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 95px;
+  letter-spacing: -0.035em;
+  color: #333333;
+}
+.side-text p {
+  font-family: "Space Mono", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  color: #4f4f4f;
+  padding-right: 40%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.side-text button {
+  text-transform: uppercase;
+  background-color: #333;
+  text-align: center;
+  font-family: "Space Mono", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+  border: none;
+  outline: none;
+  width: 200px;
+  height: 48px;
+  cursor: pointer;
+}
+.side-image img {
+  width: 100%;
+}
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 80vh;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.side-text {
+  padding-left: 90px;
+}
+footer {
+  height: 10vh;
+  text-align: center;
+  line-height: 10vh;
+}
+@media (max-width: 991px) {
+  .side-text p {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-right: 25%;
+  }
+  .side-text h1 {
+    font-size: 56px;
+  }
+  .side-text {
+    padding-left: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .side-text h1 {
+    font-size: 48px;
+    line-height: 75px;
+  }
+  .side-text p {
+    font-size: 18px;
+    padding-right: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .flexbox {
+    flex-direction: column;
+    height: 100%;
+  }
+  .side-image {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .side-text {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0;
+  }
+}
