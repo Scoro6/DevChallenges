@@ -73,7 +73,7 @@ footer {
   text-align: center;
   line-height: 10vh;
 }
-@media (max-width: 991px) {
+@media (max-width: 1090px) {
   .side-text p {
     margin-top: 50px;
     margin-bottom: 50px;
