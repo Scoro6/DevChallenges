@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  height: 100%;
+}
+.header {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.heading {
+  font-family: "PT Serif", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  color: #000;
+  width: 35%;
+  text-align: left;
+}
+.intro {
+  width: 45%;
+}
+.intro h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #000;
+}
+.intro p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000;
+  text-align: left;
+}
+.main {
+  max-width: 900px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 2;
+  grid-column-gap: 150px;
+  grid-row-gap: 100px;
+  height: 100%;
+}
+.first img,
+.second img,
+.third img,
+.fourth img,
+.fifth img,
+.sixth img {
+  width: 200px;
+  height: auto;
+}
+.first {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  position: relative;
+}
+.second {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  position: relative;
+}
+.third {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 75px;
+  position: relative;
+}
+.fourth {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin-top: 75px;
+  position: relative;
+}
+.fifth {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  position: relative;
+}
+.sixth {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  position: relative;
+}
+.name {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+.designation {
+  position: absolute;
+  text-transform: uppercase;
+  font-family: "PT Serif", sans-serif;
+  font-size: 12px;
+  transform: rotate(90deg);
+  white-space: nowrap;
+}
+.a {
+  top: 45px;
+  left: 160px;
+}
+.b {
+  top: 35px;
+  left: 170px;
+}
+.c {
+  top: 35px;
+  left: 170px;
+}
+.d,
+.f {
+  top: 30px;
+  left: 180px;
+}
+.e {
+  top: 25px;
+  left: 180px;
+}
+footer {
+  text-align: center;
+}
+
+@media (max-width: 950px) {
+  .main {
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+    grid-column-gap: 100px;
+    grid-row-gap: 50px;
+    max-width: 500px;
+  }
+  .fifth {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .sixth {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .heading {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-left: 20px;
+  }
+  .intro {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+  }
+  .sixth {
+    margin-top: 75px;
+  }
+}
+@media (max-width: 550px) {
+  .first img,
+  .second img,
+  .third img,
+  .fourth img,
+  .fifth img,
+  .sixth img {
+    width: 125px;
+    height: auto;
+  }
+  .a {
+    top: 45px;
+    left: 80px;
+  }
+  .b {
+    top: 35px;
+    left: 95px;
+  }
+  .c {
+    top: 35px;
+    left: 95px;
+  }
+  .d,
+  .f {
+    top: 30px;
+    left: 100px;
+  }
+  .e {
+    top: 25px;
+    left: 100px;
+  }
+  .main {
+    max-width: 280px;
+    grid-column-gap: 30px;
+    grid-row-gap: 50px;
+  }
+  .sixth,
+  .third,
+  .fourth {
+    margin-top: 45px;
+  }
+}
