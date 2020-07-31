@@ -46,8 +46,8 @@ body {
   max-width: 900px;
   margin: 50px auto;
   display: grid;
-  grid-template-columns: 3;
-  grid-template-rows: 2;
+  grid-template-columns: repeat(3,200px);
+  grid-template-rows: auto auto;
   grid-column-gap: 150px;
   grid-row-gap: 100px;
   height: 100%;
@@ -134,8 +134,8 @@ footer {
 
 @media (max-width: 950px) {
   .main {
-    grid-template-columns: 2;
-    grid-template-rows: 3;
+    grid-template-columns: repeat(2,200px);
+    grid-template-rows: auto auto auto;
     grid-column-gap: 100px;
     grid-row-gap: 50px;
     max-width: 500px;
@@ -167,6 +167,10 @@ footer {
   }
 }
 @media (max-width: 550px) {
+  .main{
+    grid-template-columns:repeat(2,125px);
+    grid-template-rows:auto auto auto;
+  }
   .first img,
   .second img,
   .third img,
